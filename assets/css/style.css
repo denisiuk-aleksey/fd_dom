@@ -7,66 +7,33 @@
 * {
   box-sizing: border-box;
 }
-.imagePlaceholder {
-  color: white;
+
+.userCard{
+  max-width: 270px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
+  flex-flow: column;
+  margin: 0 50px;
 }
 
-.imagePlaceholder:empty::after,
-.cardName:empty::after {
-  content: 'Unknown';
+.userName{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.cardsContainer {
+.userPosition{
+  font-size:14px;
+  color: #e84545;
+  margin-bottom: 30px;
+}
+
+.cardDescription{
+  font-size:14px;
+  color: gray;
+  line-height: 22.4px;
+}
+
+.userContacts{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
-.cardWrapper {
-  display: flex;
-  align-items: stretch;
-  border: 5px solid;
-  margin: 2rem 1rem;
-}
-
-.cardContainer {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  text-align: center;
-}
-
-.imageWrapper {
-  width: inherit;
-  height: 320px;
-  position: relative;
-  overflow: hidden;
-}
-
-.imagePlacement {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.cardImage {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-  object-position: top;
-}
-
-.cardName {
-  margin: 10px 0;
-}
-
-.cardDescription {
-  font-weight: bold;
+  flex-direction: row;
+  justify-content:space-between;
 }
